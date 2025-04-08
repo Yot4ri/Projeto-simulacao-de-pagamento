@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Método de pagamento</title>
+        <script defer type=text/javascript src="script.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    </head>
+
+    <body>
+        <form method="post" id="formulario" class="text-center mb-2">
+            <h2 class="titulo" class="text-center">Método de pagamento</h2>
+            <h5 class="subtitulo" class="text-center">Preencha os dados abaixo para continuar</h5>
+
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" name="valor" value= "">
+            <br><br>
+
+            <input type="radio" id="pix" name="opcoes_pagamento" value="pix" checked>
+            <label for="pix">Pix</label>
+
+            <input type="radio" id="cartaoCredito" name="opcoes_pagamento" value="credito">
+            <label for="cartaoCredito">Cartão de Crédito</label>
+            <br> 
+
+            <input type="submit" value="Informar Dados" class="btn btn-primary">
+        </form>
+        
+        <div id="segundoForm">
+            <!-- Será criado dinamicamente depois, por meio do js-->
+             
+        </div>
+    </body>
+
+    </html>
